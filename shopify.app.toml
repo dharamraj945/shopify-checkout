@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "grt-checkout"
+client_id = "d3ee480b64b87b950a34e2bdd56059b1"
+application_url = "https://having-instructors-requesting-icons.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://having-instructors-requesting-icons.trycloudflare.com/auth/callback",
+  "https://having-instructors-requesting-icons.trycloudflare.com/auth/shopify/callback",
+  "https://having-instructors-requesting-icons.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "haripal-ji.myshopify.com"
